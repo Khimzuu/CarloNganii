@@ -8,7 +8,7 @@ document.getElementById('yesBtn').onclick = function() {
   `;
   setTimeout(() => {
     container.innerHTML = `
-      <img src="./love.gif" alt="Love GIF" class="cute-img">
+      <img src="love.gif" alt="Love GIF" class="cute-img">
       <h2>Sabi na eh💖, tara sleep call tayo?</h2>
       <button id="goBtn" class="btn yes" style="margin-top:20px;">G! tara</button>
     `;
@@ -18,9 +18,9 @@ document.getElementById('yesBtn').onclick = function() {
   }, 1200);
 };
 
-document.getElementById('noBtn').onclick = function(e) {
+const noBtn = document.getElementById('noBtn');
+noBtn.onmouseover = function(e) {
   const btn = e.target;
-  // Move relative to the whole window
   const btnWidth = btn.offsetWidth;
   const btnHeight = btn.offsetHeight;
   const padding = 10;
